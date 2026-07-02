@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  /* Soothing, low-contrast, mental health supportive colors */
+  --color-warm-cream: #FCFBF7;
+  --color-sage-50: #F4F7F4;
+  --color-sage-100: #E8EFE8;
+  --color-sage-200: #D0DDD0;
+  --color-sage-300: #B4C6B4;
+  --color-sage-500: #6B8E73;
+  --color-sage-600: #54745A;
+  --color-sage-800: #374C3B;
+  --color-charcoal-900: #181E19;
+}
+
+/* Custom scrollbar and subtle transitions */
+body {
+  background-color: var(--color-warm-cream);
+  color: var(--color-charcoal-900);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-sage-200);
+  color: var(--color-sage-800);
+}
+
+/* Custom animations and styling utilities */
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-gentle-wave {
+  animation: wave 3s ease-in-out infinite;
+}

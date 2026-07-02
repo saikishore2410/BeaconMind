@@ -1,0 +1,6 @@
+{
+  "name": "BeaconMind",
+  "description": "An empathetic mental health navigator that lowers the cognitive barrier to finding professional help, self-guided tools, and custom search resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
